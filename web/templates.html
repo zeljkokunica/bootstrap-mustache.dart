@@ -1,0 +1,18 @@
+<template name="firstTemplate">
+  <div>
+  <span>Template {{ime}}</span>
+  {{>itemsPartial}}
+  </div>
+</template>
+
+<template name="secondTemplate">
+  <span>Drugi {{ime}}</span>
+</template>
+
+<partial name="itemsPartial">
+  <ul>
+	  {{#items}}
+	    <li>{{.}}</li>
+	  {{/items}}
+  </ul>
+</partial>
